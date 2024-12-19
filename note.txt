@@ -1,0 +1,29 @@
+How do I find my USB port name in Linux?
+
+To do this, open a Terminal window, type ls /dev/ttyUSB* , and press enter. 
+
+=====
+
+As you've noticed, ( ls -l /dev/ttyUSB* )
+the /dev/ttyUSB0 device has the group of dialout. 
+All you need to do is add the current user to the dialout group:
+
+sudo usermod -a -G dialout $USER
+
+thou will need to log out & log back in again for this to take effect.
+
+=====
+
+to list which version of python environment thou can create :
+
+conda search "^python$"
+
+=====
+
+install python-vlc in Anaconda
+
+pip install python-vlc
+
+NOTE : not using conda
+
+=====

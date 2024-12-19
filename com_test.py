@@ -15,6 +15,11 @@ while True:
     # GRD is pin 5
     # DTR is pin 4
     ser.dtr = True
+    print("ON")
+    print()
     time.sleep(5)
+
     ser.dtr = False
+    print("OFF")
+    print()
     time.sleep(5)
