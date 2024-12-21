@@ -5,7 +5,7 @@ import vlc
 import time
 
 media_player = vlc.MediaPlayer()
-media = vlc.Media("susan_wong_sway.m4a")
+media = vlc.Media("test_speech.mp3")
 media_player.set_media(media)
 
 media_player.play()
